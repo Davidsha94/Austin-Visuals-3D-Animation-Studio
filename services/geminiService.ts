@@ -48,7 +48,7 @@ export const generateCreativeBrief = async (
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: `
-        Act as a Senior Creative Director for a high-end 3D animation studio (Lumina 3D).
+        Act as a Senior Creative Director for a high-end 3D animation studio (Austin Visuals).
         The client belongs to the ${industry} industry.
         Their rough project idea is: "${projectDescription}".
 

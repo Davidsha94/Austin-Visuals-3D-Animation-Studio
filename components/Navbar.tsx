@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2 group">
           <Hexagon className="w-8 h-8 text-indigo-500 group-hover:rotate-90 transition-transform duration-500" fill="currentColor" fillOpacity={0.2} />
-          <span className="text-2xl font-display font-bold tracking-tight">LUMINA<span className="text-indigo-400">3D</span></span>
+          <span className="text-2xl font-display font-bold tracking-tight">AUSTIN<span className="text-indigo-400">VISUALS</span></span>
         </a>
 
         {/* Desktop Menu */}

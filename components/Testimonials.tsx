@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "Lumina transformed our CAD files into a marketing masterpiece. The level of detail in the texture work was indistinguishable from reality.",
+    quote: "Austin Visuals transformed our CAD files into a marketing masterpiece. The level of detail in the texture work was indistinguishable from reality.",
     author: "Sarah Jenkins",
     role: "Marketing Director, AeroDynamics Inc."
   },

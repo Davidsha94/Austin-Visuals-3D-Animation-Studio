@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-2xl font-display font-bold text-white mb-4">LUMINA<span className="text-indigo-500">3D</span></h2>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">AUSTIN<span className="text-indigo-500">VISUALS</span></h2>
             <p className="text-gray-500 max-w-sm">
               We are a digital production studio specializing in high-end 3D animation, visual effects, and motion graphics for forward-thinking brands.
             </p>
@@ -32,14 +32,14 @@ const Footer: React.FC = () => {
               <a href="#" className="text-gray-500 hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
             </div>
             <p className="mt-4 text-gray-600 text-sm">
-              hello@lumina3d.com<br />
-              +1 (555) 123-4567
+              info@austinvisuals.com<br />
+              +1 (512) 591-8024
             </p>
           </div>
         </div>
         
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Lumina 3D Studio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Austin Visuals 3D Studio. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-gray-400">Privacy Policy</a>
             <a href="#" className="hover:text-gray-400">Terms of Service</a>
