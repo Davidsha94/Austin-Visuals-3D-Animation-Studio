@@ -1,9 +1,12 @@
 import React from 'react';
 import { Play, ArrowRight } from 'lucide-react';
+import { content } from '../content';
 
 const Hero: React.FC = () => {
+  const { hero } = content;
+
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-900/20 to-transparent"></div>
@@ -17,22 +20,22 @@ const Hero: React.FC = () => {
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-bold tracking-widest uppercase">
             <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-            Full Service Animation Studio
+            {hero.badge}
           </div>
           <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
-            Explaining the <br />
-            <span className="gradient-text">Complex in 3D</span>
+            {hero.titleLine1} <br />
+            <span className="gradient-text">{hero.titleHighlight}</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-lg leading-relaxed">
-            From medical devices to industrial engineering. We visualize your technology with scientific accuracy and cinematic quality.
+            {hero.description}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a href="#consultation" className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/25">
-              Get a Free Quote <ArrowRight className="w-4 h-4" />
+              {hero.ctaPrimary} <ArrowRight className="w-4 h-4" />
             </a>
             <button className="px-8 py-4 glass-panel text-white font-semibold rounded-lg hover:bg-white/10 transition-colors flex items-center justify-center gap-2 group">
-              <Play className="w-4 h-4 fill-current group-hover:scale-110 transition-transform" /> View Showreel
+              <Play className="w-4 h-4 fill-current group-hover:scale-110 transition-transform" /> {hero.ctaSecondary}
             </button>
           </div>
         </div>
@@ -51,10 +54,10 @@ const Hero: React.FC = () => {
                 <div className="flex justify-between items-end">
                    <div>
                       <p className="text-indigo-400 text-sm font-mono mb-1">PROJECT_01</p>
-                      <h3 className="text-white font-bold text-lg">Bio-Mechanical Implant</h3>
+                      <h3 className="text-white font-bold text-lg">{hero.imageProject}</h3>
                    </div>
                    <div className="text-right">
-                      <p className="text-xs text-gray-400">Final Render</p>
+                      <p className="text-xs text-gray-400">{hero.imageLabel}</p>
                       <p className="text-white font-mono">4K</p>
                    </div>
                 </div>

@@ -1,11 +1,9 @@
 import React from 'react';
-
-const clients = [
-  "TechCore Systems", "MediLife Solutions", "AeroSpace Dynamics", "Future Energy", 
-  "Global Motors", "Construct AI", "BioGenetics", "NanoTech Labs"
-];
+import { content } from '../content';
 
 const Clients: React.FC = () => {
+  const { clients } = content;
+
   return (
     <section className="py-10 bg-black border-y border-white/5 overflow-hidden">
       <div className="flex w-full whitespace-nowrap overflow-hidden relative">

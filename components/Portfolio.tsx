@@ -1,23 +1,17 @@
 import React from 'react';
-
-const projects = [
-  { title: "Aerospace Turbine", cat: "Engineering", img: "https://picsum.photos/seed/aero/800/600" },
-  { title: "Smart Watch V2", cat: "Consumer Electronics", img: "https://picsum.photos/seed/watch/800/600" },
-  { title: "Nano-Bot Sequence", cat: "Medical", img: "https://picsum.photos/seed/medical/800/600" },
-  { title: "EV Battery Core", cat: "Automotive", img: "https://picsum.photos/seed/auto/800/600" },
-  { title: "Architectural Flow", cat: "Real Estate", img: "https://picsum.photos/seed/arch/800/600" },
-  { title: "Cosmetic Bottle", cat: "Advertising", img: "https://picsum.photos/seed/bottle/800/600" },
-];
+import { content } from '../content';
 
 const Portfolio: React.FC = () => {
+  const { portfolio } = content;
+
   return (
     <section id="work" className="py-24 bg-lumina-dark">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Selected Works</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{portfolio.title}</h2>
             <p className="text-gray-400 max-w-xl">
-              A showcase of our recent high-fidelity 3D productions across various industries.
+              {portfolio.description}
             </p>
           </div>
           <button className="text-indigo-400 font-semibold hover:text-indigo-300 transition-colors">
@@ -26,7 +20,7 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((item, idx) => (
+          {portfolio.items.map((item, idx) => (
             <div key={idx} className="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer">
               <img 
                 src={item.img} 
